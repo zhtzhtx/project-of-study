@@ -178,7 +178,7 @@ class MyPromise {
             }
         })
     }
-    
+
     static any(array) {
         let result = [];
         let index = 0;
