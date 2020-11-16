@@ -1,0 +1,100 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    position  : relative;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1F1E1A;
+}
+
+.container {
+    min-height: 100vh;
+    padding   : 20px 60px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    color        : #fff;
+    font-size    : 60px;
+    font-weight  : 400;
+}
+
+.container .sortArea {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    color          : #fff;
+    font-size      : 30px;
+    font-weight    : 400;
+}
+
+.container .sortArea .sortButton {
+    padding   : 10px 20px;
+    background: #1E1C19;
+    color     : #839294;
+    cursor    : pointer;
+}
+
+.container .sortArea .sortButton:hover {
+    color: #fff;
+}
+
+.container .listBox {
+    margin-top: 10px;
+}
+
+.container .listBox ul {
+    position: relative;
+}
+
+.container .listBox li {
+    position       : absolute;
+    left           : 0px;
+    right          : 0px;
+    display        : flex;
+    justify-content: space-between;
+    min-height     : 150px;
+    font-size      : 24px;
+    background     : #1E1C19;
+    color          : #fff;
+    list-style-type: none;
+    transition     : all 1s linear;
+}
+
+.container .listBox li .liIndex {
+    flex           : 0 0 100px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin         : 0 10px;
+}
+
+.container .listBox li .liTitle {
+    flex           : 1 0 300px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin         : 0 10px;
+}
+
+.container .listBox li .liContent {
+    flex           : 2 0 600px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin         : 0 10px;
+}
+
+.container .listBox li .liDelete {
+    flex           : 0 0 20px;
+    display        : flex;
+    justify-content: center;
+    align-items    : flex-start;
+    margin         : 0 10px;
+}
+
+.container .listBox li .liDelete img {
+    cursor: pointer;
+}
