@@ -100,7 +100,7 @@
 
 ## 四. 请简述 Vue 中模板编译的过程。
 
-	1.  comileToFunctions(template,...)是整个模板编译的入口文件，它先从缓存中加载编译好的render函数，如果缓存中没有则调用complie(template,options)
- 	2.  在complie(template,options)函数中,先合并options,然后调用baseCompile(template.trim(),finalOptions)编译模板，complie的核心是合并选项，真正处理是在baseCompile中完成的
- 	3.  在baseCompile中先通过parse()将template转换为AST tree（抽象语法树）。然后通过optimize()标记AST tree中的静态sub trees（静态根节点），检测到静态子树，设置为静态，不需要在每次重新渲染的时候重新生成节点，在patch阶段跳过静态子树。最后，通过generate()把优化过的AST tree对象转化为字符串代码。
- 	4.   baseCompile结束后会回到comileToFunctions，通过调用createFunction()，继续把上一步中生成的字符串形式js代码转化为函数。当render和staticRenderFns初始化完毕，会挂载到Vue实例的options对应的属性中
+1.  comileToFunctions(template,...)是整个模板编译的入口文件，它先从缓存中加载编译好的render函数，如果缓存中没有则调用complie(template,options)
+2.  在complie(template,options)函数中,先合并options,然后调用baseCompile(template.trim(),finalOptions)编译模板，complie的核心是合并选项，真正处理是在baseCompile中完成的
+3.  在baseCompile中先通过parse()将template转换为AST tree（抽象语法树）。然后通过optimize()标记AST tree中的静态sub trees（静态根节点），检测到静态子树，设置为静态，不需要在每次重新渲染的时候重新生成节点，在patch阶段跳过静态子树。最后，通过generate()把优化过的AST tree对象转化为字符串代码。
+4.   baseCompile结束后会回到comileToFunctions，通过调用createFunction()，继续把上一步中生成的字符串形式js代码转化为函数。当render和staticRenderFns初始化完毕，会挂载到Vue实例的options对应的属性中
