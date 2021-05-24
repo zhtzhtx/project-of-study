@@ -1,0 +1,15 @@
+{
+  "name": "hanting-blog",
+  "private": true,
+  "scripts": {
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/source-strapi": "^0.2.0",
+    "element-ui": "^2.15.1",
+    "gridsome": "^0.7.0"
+  }
+}
