@@ -38,7 +38,7 @@ export default class AppleStore {
             }, 1500)
         })
         this.isPicking = true
-        const res = await mock
+        await mock
         let weight = Math.floor(200 + Math.random() * 50);
         this.appleList.push({
             id: this.appleList.length + 1,
