@@ -1,0 +1,75 @@
+.appleBasket {
+    width : 100%;
+    border: 1px solid #ddd;
+
+    .header {
+        display        : flex;
+        justify-content: center;
+        padding        : 15px 0;
+        color          : #069;
+        font-size      : 22px;
+        font-weight    : bold;
+    }
+
+    .statistic {
+        display      : flex;
+        width        : 100%;
+        border-top   : 1px dashed #ddd;
+        border-bottom: 1px dashed #ddd;
+        padding      : 10px 0;
+
+        .info {
+            flex: 1;
+
+            .title {
+                padding  : 6px 0px;
+                font-size: 16px;
+                color    : #069;
+            }
+
+            .content {
+                font-size  : 20px;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .main {
+        padding: 20px;
+
+        .empty {
+            text-align: center;
+            font-size : 16px;
+            color     : #ccc;
+            padding   : 20px 0;
+        }
+    }
+
+    .btn-group {
+        text-align: center;
+
+        button {
+            border          : none;
+            background-color: #096;
+            color           : #fff;
+            font-size       : 14px;
+            cursor          : pointer;
+
+            padding      : 13px 50px;
+            border-radius: 6px;
+            margin       : 20px auto;
+            outline      : none;
+        }
+
+        button:hover {
+            background-color: #55d98d
+        }
+
+        button.disabled {
+            background-color: #95a5a6;
+            cursor          : default;
+            opacity         : 0.65;
+        }
+
+    }
+}
